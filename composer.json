@@ -1,29 +1,29 @@
 {
-  "name": "CasaLaguna/silverstripe-docgenerator",
-  "description": "Generate APIGen docs on flush",
-  "type": "silverstripe-module",
-  "keywords": [
-    "silverstripe",
-    "docblock",
-    "annotations",
-    "documentation"
-  ],
-  "license": "BSD-3-Clause",
-  "authors": [
-    {
-      "name": "Simon 'Firesphere' Erkelens",
-      "email": "simonerkelens@silverstripe.com"
-    }
-  ],
-  "require": {
-    "silverstripe/framework": ">=3.1.0",
-    "apigen/apigen": "^4"
-  },
-  "require-dev": {
-    "phpunit/PHPUnit": "~3.7@stable"
-  },
-  "extra": {
-    "installer-name": "docgenerator"
-  },
-  "target-dir": "docgenerator"
+    "name": "CasaLaguna/silverstripe-docgenerator",
+    "description": "Generate APIGen docs on flush",
+    "type": "silverstripe-module",
+    "keywords": [
+        "silverstripe",
+        "docblock",
+        "annotations",
+        "documentation"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Simon 'Firesphere' Erkelens",
+            "email": "simonerkelens@silverstripe.com"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": ">=3.1.0",
+        "apigen/apigen": "^4.1",
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "~3.7@stable"
+    },
+    "extra": {
+        "installer-name": "docgenerator"
+    },
+    "target-dir": "docgenerator"
 }
