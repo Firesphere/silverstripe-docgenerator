@@ -1,5 +1,5 @@
 {
-    "name": "CasaLaguna/silverstripe-docgenerator",
+    "name": "Firesphere/silverstripe-docgenerator",
     "description": "Generate APIGen docs on flush",
     "type": "silverstripe-module",
     "keywords": [
