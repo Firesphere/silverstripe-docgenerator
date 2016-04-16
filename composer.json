@@ -17,7 +17,7 @@
     ],
     "require": {
         "silverstripe/framework": ">=3.1.0",
-        "apigen/apigen": "^4.1",
+        "apigen/apigen": "^4.1"
     },
     "require-dev": {
         "phpunit/PHPUnit": "~3.7@stable"

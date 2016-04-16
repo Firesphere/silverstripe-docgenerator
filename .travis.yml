@@ -1,22 +1,32 @@
-before_script:
-- composer self-update || true
-- phpenv rehash
-- git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
-- php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss
-- cd ~/builds/ss
+# See https://github.com/silverstripe-labs/silverstripe-travis-support for setup details
+
+sudo: false
+
 language: php
+
 php:
-  [5.3,5.4,5.5,5.6,7.0]
+  - 5.5
+  - 5.6
+  - 7.0
+
+env:
+  - DB=MYSQL CORE_RELEASE=3.2
+
 matrix:
+  include:
+    - php: 5.6
+      env: DB=PGSQL CORE_RELEASE=3.2
   allow_failures:
     - php: 7.0
+    - php: 5.6
+      env: DB=PGSQL CORE_RELEASE=3.2
+
+before_script:
+  - composer self-update || true
+  - git clone git://github.com/silverstripe-labs/silverstripe-travis-support.git ~/travis-support
+  - php ~/travis-support/travis_setup.php --source `pwd` --target ~/builds/ss
+  - cd ~/builds/ss
+  - composer install
+
 script:
-- vendor/bin/phpunit ideannotator/tests/
-env:
-  matrix:
-  - DB=MYSQL CORE_RELEASE=3.1
-  global:
-    secure: HJ7sHJww/NX3PPVGjy0ggZyZSLoAdGB4BZJ0UEnIDNhR1fZ1aF4pAEA1K5cvksV9FGCbQ9Z/2JfRk8csDgWIybkBuckZsj+7yjd8u6AEPLKve+GA/Z3iN21jrDZiCC/gugAWJl7OdmR+64bFBjHbvZzYUusjSjpSRO5EqqWPgWA=
-addons:
-  code_climate:
-    repo_token: edaded3f06ffcb76affdc4e747ad6a8d29093594ad2df74405d000da9c9e6899
+  - vendor/bin/phpunit docgenerator/tests
