@@ -11,7 +11,7 @@ matrix:
   allow_failures:
     - php: 7.0
 script:
-- vendor/bin/phpunit ideannotator/tests/
+- vendor/bin/phpunit docgenerator/tests/
 env:
   matrix:
   - DB=MYSQL CORE_RELEASE=3.1
