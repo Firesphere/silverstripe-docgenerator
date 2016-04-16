@@ -1,5 +1,7 @@
 # Docblock Generator
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/axyr/silverstripe-ideannotator.svg)](https://scrutinizer-ci.com/g/CasaLaguna/silverstripe-docgenerator/badges/quality-score.png?b=master)
+![Travis](https://travis-ci.org/Firesphere/silverstripe-docgenerator.svg)
+
 This tiny wrapper on APIGen, wil generate documentation from your PHP Docblocks. There's really nothing more to it.
 
 # Usage
