@@ -1,4 +1,4 @@
 DocGenerator:
   enabled: false
-  documentation_modules:
+  document_modules:
     docgenerator: "docgenerator/docs/en/apidocs"
