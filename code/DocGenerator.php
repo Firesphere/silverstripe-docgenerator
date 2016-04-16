@@ -29,7 +29,8 @@ class DocGenerator extends Object implements Flushable
             foreach ($modules as $module => $location) {
                 /** @var Director $director */
                 $director = Injector::inst()->get('Director');
-                exec($director->baseFolder() . "/vendor/apigen/apigen/bin/apigen generate -q -s " . $director->baseFolder() . "/$module -d " . $director->baseFolder() . "/$location/$module --exclude=*tests* --todo ");
+                exec($director->baseFolder() . '/vendor/apigen/apigen/bin/apigen generate -q -s ' . $director->baseFolder() . "/$module -d " . $director->baseFolder() . "/$location/$module --exclude=*tests* --todo ");
+                DB::alteration_message('(Re)generated docs in ' . $director->baseFolder() . '/' . $location . '/' . $module . ' for ' . $module, 'good');
             }
         }
     }
