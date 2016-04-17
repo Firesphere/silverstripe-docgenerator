@@ -25,3 +25,30 @@ DocGenerator:
     docgenerator: "docgenerator/docs/en/apidocs"
 ```
 Documentation build by APIGen will be build in the target directory.
+
+## Did you read this entire readme? You rock!
+
+Pictured below is a cow, just for you.
+```
+
+               /( ,,,,, )\
+              _\,;;;;;;;,/_
+           .-"; ;;;;;;;;; ;"-.
+           '.__/`_ / \ _`\__.'
+              | (')| |(') |
+              | .--' '--. |
+              |/ o     o \|
+              |           |
+             / \ _..=.._ / \
+            /:. '._____.'   \
+           ;::'    / \      .;
+           |     _|_ _|_   ::|
+         .-|     '==o=='    '|-.
+        /  |  . /       \    |  \
+        |  | ::|         |   | .|
+        |  (  ')         (.  )::|
+        |: |   |;  U U  ;|:: | `|
+        |' |   | \ U U / |'  |  |
+        ##V|   |_/`"""`\_|   |V##
+           ##V##         ##V##
+```
