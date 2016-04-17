@@ -1,5 +1,5 @@
 {
-    "name": "Firesphere/silverstripe-docgenerator",
+    "name": "firesphere/silverstripe-docgenerator",
     "description": "Generate APIGen docs on flush",
     "type": "silverstripe-module",
     "keywords": [
